@@ -1,0 +1,32 @@
+.client-list {
+    display: flex;
+}
+.client-item + .client-item {
+    margin-left: 30px;
+}
+.client-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #afb1b8;
+    transition-property: color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+}
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+.icon-client {
+    fill: currentColor;
+}
+.icon-client:hover,
+.icon-client:focus {
+    fill: currentColor;
+}
