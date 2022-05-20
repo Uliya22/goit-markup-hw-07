@@ -20,11 +20,14 @@
 address {
     font-style: normal;
 }
-.footer-list .footer-item:not(:last-child) {
-    margin-bottom: 9px;
-}
+// .footer-list .footer-item:not(:last-child) {
+//     margin-bottom: 9px;
+// }
 .footer-item {
     height: 21px;
+    .footer-list &:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
 .footer-link {
     font-size: 14px;
@@ -33,12 +36,16 @@ address {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
-}
-
-.footer-link:hover,
-.footer-link:focus {
+    &:hover,
+    &:focus {
     color: var(--accent-color);
 }
+}
+
+// .footer-link:hover,
+// .footer-link:focus {
+//     color: var(--accent-color);
+// }
 .footer-contact {
     font-size: 14px;
     line-height: 1.71px;
@@ -46,12 +53,16 @@ address {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
-}
-
-.footer-contact:hover,
-.footer-contact:focus {
+    &:hover,
+    &:focus {
     color: var(--accent-color)
 }
+}
+
+// .footer-contact:hover,
+// .footer-contact:focus {
+//     color: var(--accent-color)
+// }
 .footer-title {
     font-size: 14px;
     height: 1.14;
@@ -85,11 +96,15 @@ address {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
-}
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
 }
+}
+// .footer-soc-link:hover,
+// .footer-soc-link:focus {
+//     background-color: var(--accent-color);
+// }
 .icon-soc-footer {
     fill: #FFFFFF;
 }

@@ -17,16 +17,25 @@
     transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
-}
-.client-link:hover,
-.client-link:focus {
+    &:hover,
+    &:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
+}
+// .client-link:hover,
+// .client-link:focus {
+//     border-color: var(--accent-color);
+//     color: var(--accent-color);
+// }
 .icon-client {
     fill: currentColor;
-}
-.icon-client:hover,
-.icon-client:focus {
+    &:hover,
+    &:focus {
     fill: currentColor;
 }
+}
+// .icon-client:hover,
+// .icon-client:focus {
+//     fill: currentColor;
+// }
